@@ -1,2 +1,25 @@
-# MATH370_SemesterProject
 MATH 370 (Mathematical Modeling), Fall 2014 Semester Project
+
+(C) 2014 Peter Gordon <peter.gordon@csu.fullerton.edu>,
+	Casey Cao-Son <dangkhoa27@gmail.com>,
+	Brennan Truong <brennantruong@gmail.com>
+
+This repository contains the code, written report (LaTeX source and associated
+images), and presentation slides (LaTeX source and associated images) for our
+semester project: The Steiner Tree Problem (1991). This problem is from
+appendix A of the course textbook, "A First Course in Mathematical Modeling,
+5th Ed." by Giordano, Fox, and Horton (ISBN# 978-1-285-05090-4).
+
+
+In addition to this README, the written report, and the presentation, the
+following code is submitted with this project:
+	(1) Graph.py -- The Edge, Graph, and Vertex types and related functions,
+		based heavily on the csuf::Edge and csuf::Graph C++ code by Dr. Kevin
+		Wortman;
+	(2) HananPrim.py -- The "naïve" solution: Create a Hanan Grid of the graph,
+		and simply take the MST (using Prim's algorithm) after removing the
+		"outer" 1- and 2-order vertices;
+	(3) Prim.py -- An implementation of Prim's algorithm, based heavily on the
+		csuf::prim C++ code by Dr. Kevin Wortman; 
+	(4) SmarterPrim.py -- A modified implementation of Prim's algorithm to 
+		find the MRST, by adding optimal Steiner points on-demand.
